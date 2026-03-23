@@ -56,12 +56,17 @@ namespace TypeWriter.Services
 
         public void Back()
         {
+            Back(_appConfigSource.GetConfig().ForwardBackTimeMs);
+        }
+
+        public void Back(int millionSeconds)
+        {
             if (_mediaPlayer.Media != null)
             {
                 var time = _mediaPlayer.Time;
-                if (time > _appConfigSource.GetConfig().ForwardBackTimeMs)
+                if (time > millionSeconds)
                 {
-                    _mediaPlayer.Time = time - _appConfigSource.GetConfig().ForwardBackTimeMs;
+                    _mediaPlayer.Time = time - millionSeconds;
                 }
                 else
                 {

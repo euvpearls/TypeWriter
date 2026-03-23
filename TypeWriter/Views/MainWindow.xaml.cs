@@ -98,6 +98,107 @@ namespace TypeWriter.Views
                 App.Instance.TrayIcon.ShowBalloonTip(nameof(TypeWriter), $"Failed to register {model.Name}.", Hardcodet.Wpf.TaskbarNotification.BalloonIcon.Warning);
             }
 
+            model = new HotKeyModel("BackMedia1", true, false, false, false, Keys.D1);
+            try
+            {
+                this.RegisterGlobalHotKey(model, (model) => { try { _mediaPlayerController.Back(1 * 1000); } catch (Exception ex) { _logger.Warn(ex); } });
+            }
+            catch (Exception ex)
+            {
+                _logger.Warn(ex);
+                App.Instance.TrayIcon.ShowBalloonTip(nameof(TypeWriter), $"Failed to register {model.Name}.", Hardcodet.Wpf.TaskbarNotification.BalloonIcon.Warning);
+            }
+
+            model = new HotKeyModel("BackMedia2", true, false, false, false, Keys.D2);
+            try
+            {
+                this.RegisterGlobalHotKey(model, (model) => { try { _mediaPlayerController.Back(2 * 1000); } catch (Exception ex) { _logger.Warn(ex); } });
+            }
+            catch (Exception ex)
+            {
+                _logger.Warn(ex);
+                App.Instance.TrayIcon.ShowBalloonTip(nameof(TypeWriter), $"Failed to register {model.Name}.", Hardcodet.Wpf.TaskbarNotification.BalloonIcon.Warning);
+            }
+            model = new HotKeyModel("BackMedia3", true, false, false, false, Keys.D3);
+            try
+            {
+                this.RegisterGlobalHotKey(model, (model) => { try { _mediaPlayerController.Back(3 * 1000); } catch (Exception ex) { _logger.Warn(ex); } });
+            }
+            catch (Exception ex)
+            {
+                _logger.Warn(ex);
+                App.Instance.TrayIcon.ShowBalloonTip(nameof(TypeWriter), $"Failed to register {model.Name}.", Hardcodet.Wpf.TaskbarNotification.BalloonIcon.Warning);
+            }
+            model = new HotKeyModel("BackMedia4", true, false, false, false, Keys.D4);
+            try
+            {
+                this.RegisterGlobalHotKey(model, (model) => { try { _mediaPlayerController.Back(4 * 1000); } catch (Exception ex) { _logger.Warn(ex); } });
+            }
+            catch (Exception ex)
+            {
+                _logger.Warn(ex);
+                App.Instance.TrayIcon.ShowBalloonTip(nameof(TypeWriter), $"Failed to register {model.Name}.", Hardcodet.Wpf.TaskbarNotification.BalloonIcon.Warning);
+            }
+            model = new HotKeyModel("BackMedia5", true, false, false, false, Keys.D5);
+            try
+            {
+                this.RegisterGlobalHotKey(model, (model) => { try { _mediaPlayerController.Back(5 * 1000); } catch (Exception ex) { _logger.Warn(ex); } });
+            }
+            catch (Exception ex)
+            {
+                _logger.Warn(ex);
+                App.Instance.TrayIcon.ShowBalloonTip(nameof(TypeWriter), $"Failed to register {model.Name}.", Hardcodet.Wpf.TaskbarNotification.BalloonIcon.Warning);
+            }
+            model = new HotKeyModel("BackMedia6", true, false, false, false, Keys.D6);
+            try
+            {
+                this.RegisterGlobalHotKey(model, (model) => { try { _mediaPlayerController.Back(6 * 1000); } catch (Exception ex) { _logger.Warn(ex); } });
+            }
+            catch (Exception ex)
+            {
+                _logger.Warn(ex);
+                App.Instance.TrayIcon.ShowBalloonTip(nameof(TypeWriter), $"Failed to register {model.Name}.", Hardcodet.Wpf.TaskbarNotification.BalloonIcon.Warning);
+            }
+            model = new HotKeyModel("BackMedia7", true, false, false, false, Keys.D7);
+            try
+            {
+                this.RegisterGlobalHotKey(model, (model) => { try { _mediaPlayerController.Back(7 * 1000); } catch (Exception ex) { _logger.Warn(ex); } });
+            }
+            catch (Exception ex)
+            {
+                _logger.Warn(ex);
+                App.Instance.TrayIcon.ShowBalloonTip(nameof(TypeWriter), $"Failed to register {model.Name}.", Hardcodet.Wpf.TaskbarNotification.BalloonIcon.Warning);
+            }
+            model = new HotKeyModel("BackMedia8", true, false, false, false, Keys.D8);
+            try
+            {
+                this.RegisterGlobalHotKey(model, (model) => { try { _mediaPlayerController.Back(8 * 1000); } catch (Exception ex) { _logger.Warn(ex); } });
+            }
+            catch (Exception ex)
+            {
+                _logger.Warn(ex);
+                App.Instance.TrayIcon.ShowBalloonTip(nameof(TypeWriter), $"Failed to register {model.Name}.", Hardcodet.Wpf.TaskbarNotification.BalloonIcon.Warning);
+            }
+            model = new HotKeyModel("BackMedia9", true, false, false, false, Keys.D9);
+            try
+            {
+                this.RegisterGlobalHotKey(model, (model) => { try { _mediaPlayerController.Back(9 * 1000); } catch (Exception ex) { _logger.Warn(ex); } });
+            }
+            catch (Exception ex)
+            {
+                _logger.Warn(ex);
+                App.Instance.TrayIcon.ShowBalloonTip(nameof(TypeWriter), $"Failed to register {model.Name}.", Hardcodet.Wpf.TaskbarNotification.BalloonIcon.Warning);
+            }
+            model = new HotKeyModel("BackMedia10", true, false, false, false, Keys.D0);
+            try
+            {
+                this.RegisterGlobalHotKey(model, (model) => { try { _mediaPlayerController.Back(10 * 1000); } catch (Exception ex) { _logger.Warn(ex); } });
+            }
+            catch (Exception ex)
+            {
+                _logger.Warn(ex);
+                App.Instance.TrayIcon.ShowBalloonTip(nameof(TypeWriter), $"Failed to register {model.Name}.", Hardcodet.Wpf.TaskbarNotification.BalloonIcon.Warning);
+            }
             model = new HotKeyModel("IncSpeed", true, false, false, false, Keys.Oemplus);
             try
             {
